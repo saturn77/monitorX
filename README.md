@@ -23,3 +23,9 @@ fundamental issue with the compiler versus the VHDL specification.
 The highly popular DE10-Nano from Terasic was used to test the code. The logic
 portion of the device was used with Nios, and the hard processor side was not
 used at all. The design was synthesized with Quartus 20.1 on Windows 10. 
+
+The general structure as to how the designw as setup is shown below. The output
+reg from Nios is highlighted in red, and there are three versions of that
+value (operated on by the "bits" function) read back in my Nios.
+
+<img src="media/RTL_diagram.png">

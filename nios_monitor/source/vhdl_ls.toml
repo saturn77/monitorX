@@ -1,0 +1,15 @@
+[libraries.work]
+files = [
+    'pwm_gen_fsm.vhd',
+    'signal_processing.vhd',
+    'xy_counter.vhd',
+    'DE10_NANO.vhd',
+    'dataflow.vhd',
+    'Basic_Data_Types.vhd', 
+    'sum_of_squares.vhd', 
+    'first_order_lowpass.vhd',
+    'timer_freq_long.vhd',
+    'first_order_lowpass_signed.vhd',
+    'Nios_package.vhd', 
+    'power_calc_complex.vhd'
+]

@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Fri Sep 03 11:17:00 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 Patches 1.08std,1.02i SJ Standard Edition
+Revision Name : DE10_NANO
+Top-level Entity Name : DE10_NANO
+Family : Cyclone V
+Logic utilization (in ALMs) : 5,569 / 41,910 ( 13 % )
+Total registers : 7633
+Total pins : 21 / 314 ( 7 % )
+Total virtual pins : 0
+Total block memory bits : 1,065,856 / 5,662,720 ( 19 % )
+Total DSP Blocks : 33 / 112 ( 29 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )

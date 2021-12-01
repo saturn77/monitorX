@@ -1,0 +1,35 @@
+
+State Machine - |DE10_NANO|NiosBase:u0|dma_receiver:dma_rx_0|state_av
+Name state_av.ST_AV_FINISH state_av.ST_AV_DONE state_av.ST_AV_HANDSHAKE state_av.ST_AV_IDLE 
+state_av.ST_AV_IDLE 0 0 0 0 
+state_av.ST_AV_HANDSHAKE 0 0 1 1 
+state_av.ST_AV_DONE 0 1 0 1 
+state_av.ST_AV_FINISH 1 0 0 1 
+
+State Machine - |DE10_NANO|NiosBase:u0|dma_receiver:dma_rx_0|state_main
+Name state_main.ST_MAIN_S1 
+state_main.ST_MAIN_S0 0 
+state_main.ST_MAIN_S1 1 
+
+State Machine - |DE10_NANO|pwm_gen_fsm:uut|state
+Name state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 
+state.S1 0 0 1 1 
+state.S2 0 1 0 1 
+state.S3 1 0 0 1 
+
+State Machine - |DE10_NANO|NiosBase:u0|NiosBase_nios2_gen2_0:nios2_gen2_0|NiosBase_nios2_gen2_0_cpu:cpu|NiosBase_nios2_gen2_0_cpu_nios2_oci:the_NiosBase_nios2_gen2_0_cpu_nios2_oci|NiosBase_nios2_gen2_0_cpu_debug_slave_wrapper:the_NiosBase_nios2_gen2_0_cpu_debug_slave_wrapper|NiosBase_nios2_gen2_0_cpu_debug_slave_tck:the_NiosBase_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |DE10_NANO|uart_rx_atlantix:uUart|state
+Name state.DONE state.LOAD state.SHIFT state.IDLE 
+state.IDLE 0 0 0 0 
+state.SHIFT 0 0 1 1 
+state.LOAD 0 1 0 1 
+state.DONE 1 0 0 1 

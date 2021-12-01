@@ -29,3 +29,15 @@ reg from Nios is highlighted in red, and there are three versions of that
 value (operated on by the "bits" function) read back in my Nios.
 
 <img src="media/RTL_diagram.png">
+
+## Running the Test
+
+Putty was used as a terminal emulator, and the C code writes values in a loop 
+and reads them each time. In the GIF below, 
+
+ 1. reg1 is the signed value
+ 2. reg2 is the unsigned value
+ 3. reg3 is the std_logic_value
+ 4. reg4 is the original value written (readback)
+
+<img src="media/nios_test.gif">

@@ -18,3 +18,8 @@ In general, VHDL allows for function overloading with *unique arguments* however
 this design the arguments are *not unique* for the "bits" function. So this is a 
 fundamental issue with the compiler versus the VHDL specification. 
 
+## Hardware Testbed
+
+The highly popular DE10-Nano from Terasic was used to test the code. The logic
+portion of the device was used with Nios, and the hard processor side was not
+used at all. The design was synthesized with Quartus 20.1 on Windows 10. 

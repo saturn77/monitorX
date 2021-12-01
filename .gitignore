@@ -1,7 +1,7 @@
 # Nios
-db/*
-incremental_db/*
-simulation/*
+nios_monitor/quartus/db/*
+nios_monitor/incremental_db/*
+nios_moniro/simulation/*
 
 # Prerequisites
 *.d

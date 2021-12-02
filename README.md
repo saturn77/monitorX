@@ -47,5 +47,5 @@ and reads them each time. In the GIF below,
 The general results seem to indicate that the bits function is okay when running
 in real time, however, upon power up/reset conditions, the bits function was 
 found to give conflicting results. Addittionally the program should not be allowed
-to compile without throwin an error, according to the author's understanding of the
+to compile without throwing an error, according to the author's understanding of the
 IEEE standard VHDL. 

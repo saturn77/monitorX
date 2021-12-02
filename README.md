@@ -1,5 +1,5 @@
 # monitorX
-An example of using Nios to monitor to FPGA operations in VHDL. 
+An example of using Nios to monitor FPGA operations in VHDL. 
 
 ## Background 
 
@@ -10,7 +10,7 @@ For example, Nios does the following:
  1. Writes a value to an output register
  2. This register is then converted to signed, unsigned, and std_logic_vector type
  3. The VHDL overloaded "bits" function is then applied to these three signals
- 4. Nios then reads these signals back in along with the original value written
+ 4. Nios then reads these signals back 
 
 ## VHDL Overloading
 
@@ -24,7 +24,7 @@ The highly popular DE10-Nano from Terasic was used to test the code. The logic
 portion of the device was used with Nios, and the hard processor side was not
 used at all. The design was synthesized with Quartus 20.1 on Windows 10. 
 
-The general structure as to how the designw as setup is shown below. The output
+The general structure as to how the design was setup is shown below. The output
 reg from Nios is highlighted in red, and there are three versions of that
 value (operated on by the "bits" function) read back in my Nios.
 

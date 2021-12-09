@@ -83,9 +83,6 @@ architecture rtl of DE10_NANO is
   signal CLK_50      : std_logic;
   signal CLK_100     : std_logic; 
   signal HRST        : std_logic;
-  signal x_sine      : slv16;     --! output of test generator - placeholder only
-  signal x_cosine    : slv16;     --! output of test generator - placeholder only
-  signal x_halfwave  : std_logic; --! output of test generator - placeholder only
 
   ----------------------------------------------
   -- Signals related to NIOS Processor 
@@ -112,13 +109,7 @@ architecture rtl of DE10_NANO is
   signal iReg16_4 : slv16; 
   signal iReg16_5 : slv16; 
   signal iReg16_6 : slv16;  
-
-  signal vab_test : slv16; --! input reg 16 bit; Vab test value 
-  signal vbc_test : slv16; --! input reg 16 bit; Vbc test value
-  signal vca_test : slv16; --! input reg 16 bit; Vca test value
-  signal Ia_test  : slv16; 
-  signal Ib_test  : slv16; 
-  signal Ic_test  : slv16; 
+ 
   signal oReg32_0 : slv32; --! nios output reg 0: 32 bit 
   signal oReg32_1 : slv32; --! nios output reg 1: 32 bit 
   signal oReg32_2 : slv32; --! nios output reg 2: 32 bit 
@@ -133,10 +124,7 @@ architecture rtl of DE10_NANO is
   signal oReg32_11: slv32; --! nios output reg 11: 32 bit
   signal oReg32_12: slv32; --! nios output reg 12: 32 bit
   signal oReg32_13: slv32; --! nios output reg 13: 32 bit
-  
-  signal volt_amplitude : slv16; --! amplitude to HIL generator 
-  signal freq_timer     : slv16; --! timer freq to HIL generator
-  
+    
   signal pwm_cnt  : uvc16;     --! counter for pwm (1000 cnts for 100 kHz at 100 MHz MCLK)
   signal pwm_sync : std_logic; --! pwm sync (one MCLK high to start PWM frame)
   signal pwm_out  : std_logic; --! pwm output for controller
@@ -152,14 +140,12 @@ architecture rtl of DE10_NANO is
   signal nios_filter_tsx2      : slv32; 
   signal sum_squares_filt      : slv32; 
   signal timer_freq_filt       : slv32; 
-  signal nios_filter_real_power: slv32; 
-  signal nios_filter_reactive_power : slv32; 
+ 
   
   signal uart_rx_data          : slv8; 
   signal uart_rx_done          : std_logic; 
   signal blank_signal          : std_logic; 
   
-  signal adc_sense_record      : adc_sense_t; 
   signal test_reg_s16 : signed(15 downto 0); 
   signal test_reg_u16 : unsigned(15 downto 0); 
   signal test_reg_slv : std_logic_vector(15 downto 0); 
